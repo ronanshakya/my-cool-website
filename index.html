@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="eng"> 
+    <head>
+        <meta charset="UTF-8"/>
+        <link href="./styles/global.css" rel="stylesheet" type="text/css">
+        <title>Ronan's Blog</title>
+    </head>
+
+    <body style="margin: 0; background-color: rgba(246, 147, 142, 1);">
+        <!-- The header is at the top of the page. -->
+        <header>
+            <!-- The main heading of the page -->
+            <h1 style="font-family: monospace; font-size: 3rem; text-align: center;">Welcome to My Personal Blog</h1>
+        </header>
+        <aside>
+            <!-- This is the aside container's heading -->
+            <h2 style="text-align: center;">What do you want to know about? Get there fast using these links.</h2>
+            <!-- nav defines a section for navigation links -->
+            <nav>
+                <!--
+                    ul stands for unordered list. This does not have any ordering or indexing.
+                    This usually shows bullet points for its containing list items.
+                    The bullets for this particular unordered list has been removed using styles. 
+                -->
+                <ul>
+                    <li>
+                        <!-- Link to the information section in the page -->
+                        <a href="#information">
+                            <!-- Makes the text bold. It's being used here to indicate the link's importance. -->
+                            <strong>Information</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- Link to the background section in the page -->
+                        <a href="#background">
+                            <strong>Background</strong>
+                        </a>
+                    </li> 
+                    <li>
+                        <!-- Link to the career section in the page -->
+                        <a href="#career">
+                            <strong>Career</strong>
+                        </a>
+                    </li> 
+                    <li>
+                        <!-- Link to the recent highlights section in the page -->
+                        <a href="#highlights">
+                            <strong>Highlights</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- Link to the image gallery section in the page -->
+                        <a href="#gallery">
+                            <strong>Gallery</strong>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- main is a container for the main content of the page -->
+        <main>
+            <section class="about-section">
+                <!-- heading for the section -->
+                <h2 class="section-heading" id="information">
+                    Information
+                </h2>
+                <p>
+                    My name is Ronan Shakya. I'm a 25-year-old man. I enjoy streaming Netflix.
+                    Football is a sport I enjoy. I like to participate in internet gaming as well.
+                </p>
+                <!-- Details provides an interface to expand and collapse content for additional details. -->
+                <details>
+                    <!--
+                        Summary contains the content that the users see without expanding the details.
+                        Users can click on that content to expand and collapse the additional details.
+                    -->
+                    <summary>They say you are what you eat. So click here to see some of my favorite dishes.</summary>
+                    <!-- ol stands for ordered list. There is numbering or indexing to indicate the order. -->
+                    <ol>
+                        <!-- An li contains individual list item -->
+                        <li>Burger</li>
+                        <li>Mo:Mo</li>
+                        <li>Ramen</li>
+                        <li>Milkshake</li>
+                        <li>Brew Coffee</li>
+                    </ol>
+                </details>
+            </section>
+
+            <section class="about-section">
+                <h2 class="section-heading" id="background">Background</h2>
+                <p>I have work experience as a Graphic Designer and Motion Graphics Artist. I have worked in these companies:
+                    <ol>
+                        <li class="workplace-list">White Board Ideas</li>
+                        <li class="workplace-list">InnovateTech</li>
+                        <li class="workplace-list">Brandhouse</li>
+                    </ol>
+                </p>
+            </section>
+
+            <section class="about-section">
+                <h2 class="section-heading" id="career">Career</h2>
+                <p>I am very interested in coding as well. I want to pursue a career in Web Development.</p>
+            </section>
+            <section class="about-section background-style">
+                <h2 class="section-heading" id="highlights">Recent Highlights</h3>
+                <div class="center">
+                    <!-- These are my blog posts. I kept them short because writing is not my strong suit. -->
+                    <article class="recent-highlight-container">
+                        <h3>Learning Web Development</h3>
+                        <p title="This is a tooltip">
+                            Starting from scratch in the world of web development was a bit overwhelming.
+                            But I have begun to piece the fundamentals together. Learning to structure web pages
+                            and style them was only the first part. But recently, I learned about semantic HTML
+                            and it has been an eye-opening experience. It's been a journey full of challenges,
+                            but I've gained the confidence to build more complex pages with each new challenge.
+                            Web development has proven to be both a challenging puzzle and a rewarding creative
+                            outlet, opening doors to a new world I never thought I could navigate.
+                        </p>
+                    </article>
+                    <article class="recent-highlight-container">
+                        <h3>Move to Canada</h3>
+                        <p>
+                            After spending all of my life in my parents' home, for the first time in my life,
+                            I have begun my journey towards independence. And I am here now, in Canada. I am
+                            determined to start my professional career as a Web Developer. I am a student right now,
+                            but I believe your professional career starts earlier than your first job. My friends
+                            from highschool have also told this to me. Internships, class projects, and side-projects
+                            contribute to a student's portfolio. I am excited to see what challenges lie in front of me
+                            and I am definitely prepared to face them. Wish me luck!
+                        </p>
+                    </article>
+                    <article class="recent-highlight-container">
+                        <h3>Cook Diary Entry</h3>
+                        <p>
+                            As a spoiled brat from Kathmandu, Nepal, I never thought I'd find myself
+                            in a kitchen, let alone in Canada, all alone. Back home, I was accustomed
+                            to having my mum prepare exquisite meals. But here in Canada, I didn't have
+                            my mum to rely on anymore. With reluctance, I started my journey of
+                            self-discovery in the world of cooking. Armed with YouTube tutorials, and
+                            video calls with my mum, and a newfound appreciation for independence, I began
+                            experimenting in the kitchen. On thing I've learned so far is that cooking is
+                            difficult, especially when you have to do it three times a day. I have a newfound
+                            appreciation for my mum.
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section class="about-section">
+                <h2 class="section-heading" id="gallery">Image Gallery</h2>
+                <!-- A picture of me on a lake. -->
+                <figure class="gallery-image">
+                    <img src="./assets/ronan-paddle.jpeg" height="400px" width="auto" alt="Ronan paddling in a lake in Pokhara, Nepal.">
+                    <figcaption>Pokhara, Nepal</figcaption>
+                </figure>
+                <!-- Every nepalese person's favorite nepali dish -->
+                <figure class="gallery-image">
+                    <img src="./assets/dumplings.jpeg" height="400px" width="auto" alt="Ronan heated dumplings.">
+                    <figcaption>Dumplings</figcaption>
+                </figure>
+                <!-- Figure allows images to be associated with some text. -->
+                <figure class="gallery-image">
+                    <img src="./assets/sunset.jpeg" height="400px" width="auto" alt="Ronan's first sunset in Canada">
+                    <figcaption>Sunset in Barrie, Canada</figcaption>
+                </figure>
+            </section>
+        </main>
+        <!-- The page footer. This one contains links to my socials. -->
+        <footer id="footer">
+            <nav>
+                <h3>Follow me on</h3>
+                <a href="https://www.facebook.com/ronan.shakya">Facebook</a>
+                <a href="https://www.instagram.com">Instagram</a>
+                <a href="https://twitter.com/CluelessCrimina">X</a>
+            </nav>
+        </footer>
+        <style>
+            .footer-style{
+                padding: 0.5rem;
+            }
+            ul {
+                list-style: none;
+                text-align: center;
+            }
+            ul li{
+                display: inline;
+                margin: 2rem;
+            }
+            .center {
+                text-align: center;
+            }
+        </style>
+    </body>
+</html>

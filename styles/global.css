@@ -1,0 +1,67 @@
+/**
+ * Set the font for the entire document as it is suitable for blogs.
+ **/
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/**
+ * Making all the sections same with equal spacing and center aligned.
+ **/
+.about-section {
+    border: 2px rgb(0, 0, 0) solid;
+    background-color: #C4E5FD;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 0.75rem 1rem;
+}
+
+/**
+ * Added more boxes inside this section to highlight my recent stories.
+ **/
+.recent-highlight-container {
+    width: 400px;
+    border: 3px hsl(0, 0%, 0%) dotted;
+    background-color: hsla(205, 93%, 88%, 0.9);
+    padding: 0.75rem 1.25rem;
+    display: inline-block;
+    margin: 1rem;
+    text-align: justify;
+    vertical-align: top;
+}
+
+/**
+ * To align the images.
+ **/
+.gallery-image {
+    display: inline-block;
+    text-align: center;
+}
+
+/**
+ * Used different color to distinguish the footer from the rest of the content.
+ **/
+#footer {
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 250px;
+}
+
+.section-heading {
+    font-size: 1.75rem;
+}
+
+.workplace-list {
+    margin: 0;
+    padding: 5px 5px 5px 0px;
+}
+
+/**
+ * Added a background image to this section to make it more lively. It was scaled to fit the entire section.
+ **/
+.background-style {
+    background-image: url('../assets/orange-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
